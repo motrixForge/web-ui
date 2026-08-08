@@ -116,7 +116,7 @@ img, svg { display: block; max-width: 100%; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ── Hero ─────────────────────────────────────────────── */
-.hero { position: relative; padding: 11rem 0 6rem; overflow: hidden; }
+.hero { position: relative; padding: 11rem 0 3.5rem; overflow: hidden; }
 .hero::after {
   content: ""; position: absolute; top: -30%; left: 50%; transform: translateX(-50%);
   width: 900px; height: 900px; pointer-events: none;
@@ -136,16 +136,6 @@ img, svg { display: block; max-width: 100%; }
 .lede { color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.18rem); max-width: 58ch; margin-top: 1.4rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2.2rem; }
 
-.pills {
-  display: flex; flex-wrap: wrap; gap: .6rem;
-  list-style: none; padding: 2.4rem 0 0; margin-top: 3rem;
-  border-top: 1px solid var(--line);
-}
-.pills li {
-  font-size: .82rem; color: var(--muted);
-  border: 1px solid var(--line); border-radius: 999px; padding: .35rem .9rem;
-  background: rgba(255,255,255,.02);
-}
 
 /* ── Sections ─────────────────────────────────────────── */
 .section { padding: 6.5rem 0; }
@@ -189,19 +179,6 @@ img, svg { display: block; max-width: 100%; }
 }
 .values h3 { margin-bottom: .45rem; }
 .values p { color: var(--muted); font-size: .89rem; }
-
-/* ── Process ──────────────────────────────────────────── */
-.steps {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  gap: 1.5rem; list-style: none; padding: 0;
-}
-.steps li { padding-top: 1.4rem; border-top: 2px solid var(--line); position: relative; }
-.steps li::before {
-  content: ""; position: absolute; top: -2px; left: 0; width: 38px; height: 2px; background: var(--accent);
-}
-.step-n { font-family: var(--font-display); font-size: .8rem; color: var(--accent); font-weight: 600; }
-.steps h3 { margin: .5rem 0 .5rem; }
-.steps p { color: var(--muted); font-size: .9rem; }
 
 /* ── Contact ──────────────────────────────────────────── */
 .contact-inner {
