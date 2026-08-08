@@ -1,0 +1,5 @@
+# Keep committed files LF so GitHub Pages parses CNAME and serves assets consistently.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
